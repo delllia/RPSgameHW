@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            background-color: teal;
+            background-size: 500px3100px;
+            background-repeat: no-repeat;
+            background-position: top center;
+            line-height: 250%;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #pic {
+            margin-top: 5%;
+            display: flex;
+            justify-content: center;
+        }
+
+        #main {
+
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 5% 30%;
+            background-color: rgb(31, 31, 32);
+            padding: 2%;
+            border: solid 1px;
+            border-style: outset;
+            border-radius: 30px;
+        }
+
+        h1 {
+            color: rgb(141, 140, 140);
+        }
+
+        select {
+            font-size: 1.5em;
+            color: rgb(141, 140, 140);
+        }
+
+        button {
+            background-color: rgb(141, 140, 140);
+            color: white;
+            font-size: 1.5em;
+        }
+
+        #bottomMain {
+            padding-top: 5%;
+        }
+
+        #result {
+            padding-top: 5%;
+            font-size: 1.5em;
+            color: blueviolet;
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="pic">
+        <img src="images/rpsImage.png">
+    </div>
+    <div id="main">
+        <h1>Player 1:</h1>
+        <select id="player1" name="player1">
+            <option value="rock">rock</option>
+            <option value="paper">paper</option>
+            <option value="scissors">scissors</option>
+        </select>
+        <h1>Player 2:</h1>
+        <select id="player2" name="player2">
+            <option value="rock">rock</option>
+            <option value="paper">paper</option>
+            <option value="scissors">scissors</option>
+        </select>
+        <div id="bottomMain">
+            <button onclick="andTheWinnerIs()">
+                RESULT:
+            </button>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="RPSgameHW.js"></script>
+</body>
+
+</html>
